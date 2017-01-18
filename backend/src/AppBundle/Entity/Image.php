@@ -117,7 +117,7 @@ class Image
     /**
      * Set legendes
      *
-     * @param array $legendes
+     * @param ArrayCollection $legendes
      *
      * @return Image
      */
@@ -131,7 +131,7 @@ class Image
     /**
      * Get legendes
      *
-     * @return array
+     * @return ArrayCollection
      */
     public function getLegendes()
     {

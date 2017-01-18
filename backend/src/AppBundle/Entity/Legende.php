@@ -63,6 +63,13 @@ class Legende
      */
     private $image;
 
+    /**
+     * @var CoupleImage
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\CoupleImage")
+     * @ORM\JoinColumn(name="lien", referencedColumnName="id", nullable=true)
+     */
+    private $lien = null;
+
 
     /**
      * Get id
@@ -216,5 +223,29 @@ class Legende
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * Set lien
+     *
+     * @param \AppBundle\Entity\CoupleImage $lien
+     *
+     * @return Legende
+     */
+    public function setLien(\AppBundle\Entity\CoupleImage $lien = null)
+    {
+        $this->lien = $lien;
+
+        return $this;
+    }
+
+    /**
+     * Get lien
+     *
+     * @return \AppBundle\Entity\CoupleImage
+     */
+    public function getLien()
+    {
+        return $this->lien;
     }
 }
