@@ -18,7 +18,7 @@ framework:
     form:            ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
-    #serializer:      { enable_annotations: true }
+    serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
     default_locale:  "%locale%"
@@ -51,10 +51,10 @@ doctrine:
         charset:  UTF8
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
-        #     e.g. database_path: "%kernel.root_dir%/../var/data/data.sqlite"
+        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
         #   2. Uncomment database_path in parameters.yml.dist
         #   3. Uncomment next line:
-        #path:     "%database_path%"
+        #     path:     "%database_path%"
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
@@ -68,3 +68,14 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# Nelmio CORS
+nelmio_cors:
+    defaults:
+        allow_origin:   ["%cors_allow_origin%"]
+        allow_methods:  ["POST", "PUT", "GET", "DELETE", "OPTIONS"]
+        allow_headers:  ["content-type", "authorization"]
+        expose_headers: ["link"]
+        max_age:        3600
+    paths:
+        '^/': ~

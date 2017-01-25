@@ -1,3 +1,7 @@
+api:
+    resource: '.'
+    type:     'api_platform'
+
 app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+    resource: '@AppBundle/Action/'
+    type:     'annotation'
