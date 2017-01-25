@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="366fa099-f5f9-4854-95fb-9803339bbdab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backend/.gitignore" afterPath="$PROJECT_DIR$/Backend/.gitignore" />
     </list>
     <ignored path="backend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -230,7 +228,7 @@
       <workItem from="1484733185487" duration="1093000" />
       <workItem from="1484743593981" duration="174000" />
       <workItem from="1485331442968" duration="158000" />
-      <workItem from="1485331992451" duration="751000" />
+      <workItem from="1485331992451" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="+ Backend">
       <created>1484733271050</created>
@@ -253,11 +251,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485332710605</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tests gitignore">
+      <created>1485332767444</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1485332767444</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2176000" />
+    <option name="totallyTimeSpent" value="2189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -299,7 +304,8 @@
     <MESSAGE value="+ Backend" />
     <MESSAGE value="Backend : passage à Api-Platform" />
     <MESSAGE value="Add Api Platform for Entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Api Platform for Entities" />
+    <MESSAGE value="Tests gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
