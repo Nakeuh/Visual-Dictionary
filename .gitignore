@@ -9,6 +9,10 @@
 
 .idea
 
+Backend/.idea
+backend/.idea
+frontend/img
+
 # Sensitive or high-churn files:
 .idea/dataSources/
 .idea/dataSources.ids
