@@ -25,11 +25,11 @@ class Image
     private $id;
 
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="numero", type="integer", length=255)
      */
-    private $nom;
+    private $numero;
 
     static $simple = 1;
     static $sommaire = 2;
@@ -44,7 +44,7 @@ class Image
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Legende", mappedBy="id")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Legende", mappedBy="id", cascade={"all"})
      */
     private $legendes;
 
@@ -69,27 +69,27 @@ class Image
     }
 
     /**
-     * Set nom
+     * Set numero
      *
-     * @param string $nom
+     * @param int $numero
      *
      * @return Image
      */
-    public function setNom($nom)
+    public function setNumero($numero)
     {
-        $this->nom = $nom;
+        $this->numero = $numero;
 
         return $this;
     }
 
     /**
-     * Get nom
+     * Get numero
      *
-     * @return string
+     * @return int
      */
-    public function getNom()
+    public function getNumero()
     {
-        return $this->nom;
+        return $this->numero;
     }
 
     /**
@@ -149,7 +149,8 @@ class Image
      */
     public function addLegende(\AppBundle\Entity\Legende $legende)
     {
-        $this->legendes[] = $legende;
+        $legende->setImage($this);
+        $this->legendes->add($legende);
 
         return $this;
     }

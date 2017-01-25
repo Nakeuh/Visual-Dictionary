@@ -41,22 +41,6 @@ class CoupleImage
 
     /**
      * @var Image
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\CoupleImage", mappedBy="id")
-     * @ORM\JoinColumn(name="suivant", referencedColumnName="id", nullable=false)
-     *
-     */
-    private $suivant;
-
-    /**
-     * @var Image
-     *
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\CoupleImage", mappedBy="id")
-     * @ORM\JoinColumn(name="precedent", referencedColumnName="id", nullable=false)
-     */
-    private $precendent;
-
-    /**
-     * @var Image
      *
      * @ORM\OneToOne(targetEntity="AppBundle\Entity\CoupleImage", mappedBy="id")
      * @ORM\JoinColumn(name="sommaire", referencedColumnName="id", nullable=false)

@@ -54,7 +54,7 @@ class Legende
     /**
      * @var string
      *
-     * @ORM\Column(name="content", type="string", length=255)
+     * @ORM\Column(name="content", type="text")
      */
     private $content;
 
@@ -71,6 +71,25 @@ class Legende
      * @ORM\JoinColumn(name="lien", referencedColumnName="id", nullable=true)
      */
     private $lien = null;
+
+    /**
+     * Legende constructor.
+     * @param float $x1
+     * @param float $y1
+     * @param float $x2
+     * @param float $y2
+     * @param string $content
+     * @param CoupleImage $lien
+     */
+    public function __construct($x1, $y1, $x2, $y2, $content, CoupleImage $lien = null)
+    {
+        $this->x1 = $x1;
+        $this->y1 = $y1;
+        $this->x2 = $x2;
+        $this->y2 = $y2;
+        $this->content = $content;
+        $this->lien = $lien;
+    }
 
 
     /**
