@@ -2,13 +2,15 @@
 
 namespace AppBundle\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Legende
  *
  * @ORM\Table(name="legende")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\LegendeRepository")
+ * @ORM\Entity()
+ * @ApiResource()
  */
 class Legende
 {
