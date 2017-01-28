@@ -1,0 +1,51 @@
+{
+    "document_name": "dictionary.pdf",
+    "pages": [{
+        "page": 12,
+        "tags": [
+            {
+                "values": [{
+                    "pos1": {
+                        "x": 448.1000061035156,
+                        "y": 49.29998779296875
+                    },
+                    "pos2": {
+                        "x": 152.93032836914062,
+                        "y": 636.62255859375
+                    },
+                    "content": "Fireball of rapidly expanding, extremely hot gas lasting about one million yearsPink indicates \u201cwarm ripples\u201d in background radiationPale blue indicates \u201ccool ripples\u201d in background radiationLow-energy microwave radiation corresponding to -454°F (-270°C)High-energy gamma radiation corresponding to 5,400°F (3,000°C)Red and pink band indicates radiation from our galaxyDeep blue indicates background radiation corresponding to -454°F (-270°C); (remnant of the Big Bang)"
+                }],
+                "tag": "Legends"
+            },
+            {
+                "values": [{
+                    "pos1": {
+                        "x": 448.1000061035156,
+                        "y": 49.29998779296875
+                    },
+                    "pos2": {
+                        "x": 152.93032836914062,
+                        "y": 636.62255859375
+                    },
+                    "content": "Fireball of rapidly expanding, extremely hot gas lasting about one million yearsTHE UNIVERSE CONTAINS EVERYTHING that exists, from the tiniest subatomic particles to galactic superclusters (the largest structures known). No one knows how big the universe is, but astronomers estimate that it contains at least 125 billion galaxies, each comprising an average of 100 billion stars. The most widely accepted theory about the origin of the universe is the Big Bang theory, which states that the universe came into being in a huge explosion\u2014the Big Bang\u2014that took place between 10 and 20 billion years ago. The universe initially consisted of a very hot, dense fireball of expanding, cooling gas. After about one million years, the gas began to condense into localized clumps called protogalaxies. During the  next five billion years, the protogalaxies continued condensing, forming galaxies in which stars were being born. Today, billions of years later, the universe as a whole is still expanding, although there are localized areas in which objects are held together by gravity; for example, many galaxies are found in clusters. The Big Bang theory is supported by the discovery of faint, cool background radiation coming evenly from all directions. This radiation is believed to be the remnant of the radiation produced by the Big Bang. Small \u201cripples\u201d in the temperature of the cosmic background radiation are thought to be evidence of slight fluctuations in the density of the early universe, which resulted in the formation of galaxies. Astronomers do not yet know if the universe is \u201cclosed,\u201d which means it will eventually stop expanding and begin to contract, or if it is \u201copen,\u201d which  means it will continue expanding forever.Pink indicates \u201cwarm ripples\u201d in background radiationPale blue indicates \u201ccool ripples\u201d in background radiationLow-energy microwave radiation corresponding to -454°F (-270°C)High-energy gamma radiation corresponding to 5,400°F (3,000°C)Red and pink band indicates radiation from our galaxyDeep blue indicates background radiation corresponding to -454°F (-270°C); (remnant of the Big Bang)"
+                }],
+                "tag": "Legends & Paragraphs"
+            },
+            {
+                "values": [{
+                    "pos1": {
+                        "x": 30.06999969482422,
+                        "y": 82.79998779296875
+                    },
+                    "pos2": {
+                        "x": 210.8540496826172,
+                        "y": 433.9033508300781
+                    },
+                    "content": "THE UNIVERSE CONTAINS EVERYTHING that exists, from the tiniest subatomic particles to galactic superclusters (the largest structures known). No one knows how big the universe is, but astronomers estimate that it contains at least 125 billion galaxies, each comprising an average of 100 billion stars. The most widely accepted theory about the origin of the universe is the Big Bang theory, which states that the universe came into being in a huge explosion\u2014the Big Bang\u2014that took place between 10 and 20 billion years ago. The universe initially consisted of a very hot, dense fireball of expanding, cooling gas. After about one million years, the gas began to condense into localized clumps called protogalaxies. During the  next five billion years, the protogalaxies continued condensing, forming galaxies in which stars were being born. Today, billions of years later, the universe as a whole is still expanding, although there are localized areas in which objects are held together by gravity; for example, many galaxies are found in clusters. The Big Bang theory is supported by the discovery of faint, cool background radiation coming evenly from all directions. This radiation is believed to be the remnant of the radiation produced by the Big Bang. Small \u201cripples\u201d in the temperature of the cosmic background radiation are thought to be evidence of slight fluctuations in the density of the early universe, which resulted in the formation of galaxies. Astronomers do not yet know if the universe is \u201cclosed,\u201d which means it will eventually stop expanding and begin to contract, or if it is \u201copen,\u201d which  means it will continue expanding forever."
+                }],
+                "tag": "Paragraphs"
+            }
+        ]
+    }],
+    "nbPages": 674
+}
