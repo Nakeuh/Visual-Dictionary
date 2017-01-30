@@ -15,15 +15,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Created by victor on 1/11/17.
  */
 public class DataExtractor {
 
-    public static String DEFAULT_REGEX ="";
 
+    /**
+     * Generate criterias for each tag and extract for each page and each tag the texts associated.
+     * Then it create a json file and store all the extracted datas
+     * @param tagProperties
+     * @param filename
+     */
     public static void process(List<TagProperties> tagProperties, String filename){
         PDFTextStripperCustom pdfStripper = null;
         PDDocument pdDoc = null;
@@ -47,6 +51,8 @@ public class DataExtractor {
             // Extract page by page
             for(int page=0; page<nbPage ;page++){
 
+                System.out.println("Extract tag text from page "+page);
+
                 pdfStripper.setStartPage(page);
 
                 pdfStripper.setEndPage(page);
@@ -54,7 +60,7 @@ public class DataExtractor {
                 // fill the charactersByArticle field of PDFTextStripper
                 pdfStripper.getText(pdDoc);
 
-                Map<String,List<Tag>> tagAssociatedText= pdfStripper.extractTags(tagProperties,tagCriteria);
+                Map<String,List<Tag>> tagAssociatedText= pdfStripper.extractTags(tagCriteria);
 
                 extractedTexts.put(page,tagAssociatedText);
             }
@@ -67,12 +73,25 @@ public class DataExtractor {
         }
     }
 
-    public static List<TagCriterias> getCriterias(int nbPage,List<TagProperties> properties,
+    /**
+     * Generate a List of Tag criterias from a list of Tag properties
+     * @param nbPage
+     * @param properties
+     * @param pdfStripper
+     * @param pdDoc
+     * @return
+     * @throws IOException
+     */
+    private static List<TagCriterias> getCriterias(int nbPage,List<TagProperties> properties,
                                                         PDFTextStripperCustom pdfStripper,
                                                         PDDocument pdDoc)throws IOException{
+
+
         List<TagCriterias> criteria = new ArrayList<TagCriterias>();
 
         for (TagProperties p:properties){
+            System.out.println("Generate criterias for tag "+p.getName());
+
             TagCriterias crit = new TagCriterias();
 
             crit.setName(p.getName());
@@ -89,11 +108,6 @@ public class DataExtractor {
                 crit.setEndPage(p.getEndPage());
             }
 
-            if(p.getRegex()==null){
-                crit.setRegex(Pattern.compile(DEFAULT_REGEX));
-            }else {
-                crit.setRegex(p.getRegex());
-            }
             List<PDFont> fonts = new ArrayList<PDFont>();
 
             for (Tuple2<Integer,Point2D>  click: p.getPosSample()) {
@@ -113,7 +127,13 @@ public class DataExtractor {
         return criteria;
     }
 
-    public static void extractedTextToJSON(String filepath,
+    /**
+     * Store extracted datas into json file.
+     * @param filepath
+     * @param nbPage
+     * @param extractedTexts
+     */
+    private static void extractedTextToJSON(String filepath,
                                            int nbPage,
                                            Map<Integer,Map<String,List<Tag>>> extractedTexts){
 

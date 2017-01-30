@@ -16,32 +16,29 @@ public class Main {
         List<TagProperties> tagProps = new ArrayList<TagProperties>();
 
         String nameTag = "Legends";
-        String regex = null;
         List<Tuple2<Integer,Point2D>> posSample = new ArrayList<Tuple2<Integer,Point2D>>();
         posSample.add(new Tuple2<Integer, Point2D>(427,new Point2D.Float(100.005f,192.7897f)));
 
         Integer startPage=null;
         Integer endPage = null;
-        tagProps.add(new TagProperties(nameTag,regex, posSample,startPage,endPage));
+        tagProps.add(new TagProperties(nameTag, posSample,startPage,endPage));
 
         nameTag = "Paragraphs";
-        regex = null;
         posSample = new ArrayList<Tuple2<Integer,Point2D>>();
         posSample.add(new Tuple2<Integer, Point2D>(9,new Point2D.Float(95.005f,330.7897f)));
 
         startPage=null;
         endPage = null;
-        tagProps.add(new TagProperties(nameTag,regex,posSample,startPage,endPage));
+        tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage));
 
         nameTag = "Legends & Paragraphs";
-        regex = null;
         posSample = new ArrayList<Tuple2<Integer,Point2D>>();
         posSample.add(new Tuple2<Integer, Point2D>(300,new Point2D.Float(95.005f,330.7897f)));
         posSample.add(new Tuple2<Integer, Point2D>(9,new Point2D.Float(95.005f,330.7897f)));
 
         startPage=null;
         endPage = null;
-        tagProps.add(new TagProperties(nameTag,regex,posSample,startPage,endPage));
+        tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage));
 
         DataExtractor.process(tagProps,filename);
 

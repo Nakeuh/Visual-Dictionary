@@ -1,8 +1,6 @@
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.pdfbox.util.TextPosition;
-import scala.Tuple2;
-import scala.Tuple3;
 
 import java.awt.geom.Point2D;
 import java.io.IOException;
@@ -10,8 +8,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by victor on 1/11/17.
@@ -25,8 +21,6 @@ public class PDFTextStripperCustom extends PDFTextStripper {
 
     public PDFont generateCriteria(Point2D pos){
         List<List<TextPosition>> list = this.getCharactersByArticle();
-
-        System.out.println("Generate Font Criteria");
 
         double distance = pos.distance(list.get(0).get(0).getX(), list.get(0).get(0).getY());
         TextPosition bestChar = list.get(0).get(0);
@@ -45,7 +39,7 @@ public class PDFTextStripperCustom extends PDFTextStripper {
     }
 
     // TODO : depend on start/end page
-    public Map<String,List<Tag>> extractTags(List<TagProperties> tagProperties,List<TagCriterias> tagCriterias){
+    public Map<String,List<Tag>> extractTags(List<TagCriterias> tagCriterias){
         Map<String,List<Tag>> tagAssociatedText = new HashMap<String, List<Tag>>();
         List<List<TextPosition>> list = this.getCharactersByArticle();
 
