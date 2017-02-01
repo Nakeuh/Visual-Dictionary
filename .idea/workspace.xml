@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="366fa099-f5f9-4854-95fb-9803339bbdab" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/src/AppBundle/Controller/ImportController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Visual-Dictionary.iml" afterPath="$PROJECT_DIR$/.idea/Visual-Dictionary.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/app/config/config.yml" afterPath="$PROJECT_DIR$/backend/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/app/config/routing.yml" afterPath="$PROJECT_DIR$/backend/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php" afterPath="$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php" afterPath="$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php" afterPath="$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php" />
     </list>
     <ignored path="backend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,6 +21,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" phpInterpreterId="bb8cad0d-e885-4a6b-9b20-f2065405f151">
+    <pharConfigPath>C:\wamp64\www\Visual-Dictionary\backend\composer.json</pharConfigPath>
+    <pharPath>C:\ProgramData\ComposerSetup\bin\composer.phar</pharPath>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -26,8 +38,8 @@
       <file leaf-file-name="CoupleImage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="e#36#80#0#PHP" expanded="true" />
               </folding>
@@ -35,11 +47,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="ImportController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Controller/ImportController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="349">
+              <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+              <folding>
+                <element signature="e#40#67#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Legende.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -48,8 +82,8 @@
       <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="2543">
+              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding>
                 <element signature="e#36#80#0#PHP" expanded="true" />
               </folding>
@@ -58,6 +92,17 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Nom</find>
+      <find>Page</find>
+      <find>addLe</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Page</replace>
+      <replace>Numero</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,11 +118,15 @@
         <option value="$PROJECT_DIR$/backend/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/backend/src/AppBundle/Repository/CoupleImageRepository.php" />
         <option value="$PROJECT_DIR$/backend/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php" />
-        <option value="$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php" />
-        <option value="$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php" />
         <option value="$PROJECT_DIR$/backend/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php" />
+        <option value="$PROJECT_DIR$/backend/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/backend/src/AppBundle/Action/ImportAction.php" />
+        <option value="$PROJECT_DIR$/backend/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php" />
+        <option value="$PROJECT_DIR$/backend/src/AppBundle/Controller/ImportController.php" />
       </list>
     </option>
   </component>
@@ -97,7 +146,66 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7">
+    <include_path>
+      <path value="$PROJECT_DIR$/backend/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/backend/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/html-to-markdown" />
+      <path value="$PROJECT_DIR$/backend/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/backend/vendor/dunglas/action-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/backend/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/backend/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/backend/vendor/behatch/contexts" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/backend/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/backend/vendor/composer" />
+      <path value="$PROJECT_DIR$/backend/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/backend/vendor/api-platform/schema-generator" />
+      <path value="$PROJECT_DIR$/backend/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/backend/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/backend/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/backend/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/backend/vendor/container-interop/container-interop" />
+      <path value="$PROJECT_DIR$/backend/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/backend/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/backend/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/easyrdf/easyrdf" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/behat" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/mink" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/backend/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/mink-browserkit-driver" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/mink-extension" />
+      <path value="$PROJECT_DIR$/backend/vendor/behat/symfony2-extension" />
+      <path value="$PROJECT_DIR$/backend/vendor/paragonie/random_compat" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -134,6 +242,192 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ressources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Action" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visual-Dictionary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -142,12 +436,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/web" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Visual-Dictionary\backend\src\AppBundle\Controller" />
+      <recent name="C:\wamp64\www\Visual-Dictionary\backend\src\AppBundle\Action" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -228,7 +528,7 @@
       <workItem from="1484733185487" duration="1093000" />
       <workItem from="1484743593981" duration="174000" />
       <workItem from="1485331442968" duration="158000" />
-      <workItem from="1485331992451" duration="764000" />
+      <workItem from="1485331992451" duration="11172000" />
     </task>
     <task id="LOCAL-00001" summary="+ Backend">
       <created>1484733271050</created>
@@ -258,11 +558,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485332767444</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tests gitignore">
+      <created>1485332775842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1485332775842</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2189000" />
+    <option name="totallyTimeSpent" value="12597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -270,9 +577,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2622108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.4974293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -325,26 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#36#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="e#36#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -353,21 +640,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ressources/dictionary.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="65670" column="12" lean-forward="false" selection-start-line="65670" selection-start-column="12" selection-end-line="65670" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/Legende.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2543">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding>
             <element signature="e#36#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Entity/CoupleImage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#36#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/AppBundle/Controller/ImportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding>
+            <element signature="e#40#67#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
