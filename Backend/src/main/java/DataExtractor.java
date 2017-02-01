@@ -60,6 +60,7 @@ public class DataExtractor {
                 // fill the charactersByArticle field of PDFTextStripper
                 pdfStripper.getText(pdDoc);
 
+
                 Map<String,List<Tag>> tagAssociatedText= pdfStripper.extractTags(page,tagCriteria);
 
                 extractedTexts.put(page,tagAssociatedText);
@@ -108,6 +109,8 @@ public class DataExtractor {
                 crit.setEndPage(p.getEndPage());
             }
 
+            crit.setRegex(p.getRegex());
+
             List<PDFont> fonts = new ArrayList<PDFont>();
 
             for (Tuple2<Integer,Point2D>  click: p.getPosSample()) {
@@ -122,6 +125,8 @@ public class DataExtractor {
             }
             crit.setFontCriteria(fonts);
             criteria.add(crit);
+
+
         }
 
         return criteria;

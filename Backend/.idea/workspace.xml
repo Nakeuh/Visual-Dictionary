@@ -22,11 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataExtractor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.67469877">
+              <caret line="42" column="91" selection-start-line="42" selection-start-column="91" selection-end-line="42" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataExtractor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23076923">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#DataExtractor#0" expanded="false" />
                 <element signature="docComment;method#process#0;class#DataExtractor#0" expanded="false" />
@@ -39,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <file leaf-file-name="dictionary.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dictionary.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+            <state vertical-scroll-proportion="-15.041667">
+              <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -52,12 +62,15 @@
       <file leaf-file-name="PDFTextStripperCustom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PDFTextStripperCustom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+            <state vertical-scroll-proportion="-18.64516">
+              <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
               <folding>
                 <element signature="docComment;class#PDFTextStripperCustom#0" expanded="false" />
                 <element signature="method#PDFTextStripperCustom#0;class#PDFTextStripperCustom#0" expanded="false" />
                 <element signature="method#generateCriteria#0;class#PDFTextStripperCustom#0" expanded="false" />
+                <element signature="method#isInBlock#0;class#PDFTextStripperCustom#0" expanded="false" />
+                <element signature="e#5578#5639#0" expanded="false" />
+                <element signature="e#6366#6400#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,10 +88,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/TagProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/TagCriterias.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/PDFTextStripperCustom.java" />
         <option value="$PROJECT_DIR$/dictionary.json" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataExtractor.java" />
       </list>
     </option>
   </component>
@@ -135,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,8 +225,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,7 +578,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1317" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -574,7 +587,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31390134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3348281" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2541306" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -634,6 +647,9 @@
             <element signature="docComment;class#PDFTextStripperCustom#0" expanded="false" />
             <element signature="method#PDFTextStripperCustom#0;class#PDFTextStripperCustom#0" expanded="false" />
             <element signature="method#generateCriteria#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="method#isInBlock#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="e#5578#5639#0" expanded="false" />
+            <element signature="e#6366#6400#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,6 +677,9 @@
             <element signature="docComment;class#PDFTextStripperCustom#0" expanded="false" />
             <element signature="method#PDFTextStripperCustom#0;class#PDFTextStripperCustom#0" expanded="false" />
             <element signature="method#generateCriteria#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="method#isInBlock#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="e#5578#5639#0" expanded="false" />
+            <element signature="e#6366#6400#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,6 +715,9 @@
             <element signature="docComment;class#PDFTextStripperCustom#0" expanded="false" />
             <element signature="method#PDFTextStripperCustom#0;class#PDFTextStripperCustom#0" expanded="false" />
             <element signature="method#generateCriteria#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="method#isInBlock#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="e#5578#5639#0" expanded="false" />
+            <element signature="e#6366#6400#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -704,6 +726,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#412#413#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -712,8 +738,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -722,23 +748,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TagProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07401316">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TagCriterias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024671054">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1669#1670#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,13 +760,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4194079">
           <caret line="17" column="10" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+          <folding>
+            <element signature="e#412#413#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TagProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9006211">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+          <folding>
+            <element signature="docComment;class#TagProperties#0" expanded="false" />
+            <element signature="method#TagProperties#0;class#TagProperties#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TagCriterias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9068323">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#TagCriterias#0;class#TagCriterias#0" expanded="false" />
+            <element signature="method#TagCriterias#1;class#TagCriterias#0" expanded="false" />
+            <element signature="e#1290#1291#0" expanded="false" />
+            <element signature="e#1318#1319#0" expanded="false" />
+            <element signature="e#1350#1351#0" expanded="false" />
+            <element signature="e#1384#1385#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PDFTextStripperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.64516">
+          <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+          <folding>
+            <element signature="docComment;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="method#PDFTextStripperCustom#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="method#generateCriteria#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="method#isInBlock#0;class#PDFTextStripperCustom#0" expanded="false" />
+            <element signature="e#5578#5639#0" expanded="false" />
+            <element signature="e#6366#6400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.041667">
+          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23076923">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#DataExtractor#0" expanded="false" />
             <element signature="docComment;method#process#0;class#DataExtractor#0" expanded="false" />
@@ -767,21 +834,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.67469877">
+          <caret line="42" column="91" selection-start-line="42" selection-start-column="91" selection-end-line="42" selection-end-column="91" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PDFTextStripperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-          <folding>
-            <element signature="docComment;class#PDFTextStripperCustom#0" expanded="false" />
-            <element signature="method#PDFTextStripperCustom#0;class#PDFTextStripperCustom#0" expanded="false" />
-            <element signature="method#generateCriteria#0;class#PDFTextStripperCustom#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -2,6 +2,8 @@ import scala.Tuple2;
 
 import java.awt.geom.Point2D;
 import java.util.List;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * Created by victor on 1/25/17.
@@ -12,8 +14,9 @@ public class TagProperties {
     private List<Tuple2<Integer,Point2D>> posSample;
     private int startPage;              // Optionnal
     private int endPage;                // Optionnal
+    private Pattern regex;               // Optionnal
 
-    public TagProperties(String name, List<Tuple2<Integer,Point2D>> posSample, Integer startPage, Integer endPage){
+    public TagProperties(String name, List<Tuple2<Integer,Point2D>> posSample, Integer startPage, Integer endPage, String regex){
         if(name==null || "".equals(name)){
             System.out.println("Invalid Name : <<"+name+">>");
             System.exit(0);
@@ -39,6 +42,14 @@ public class TagProperties {
             this.endPage = endPage;
         }else{
             this.endPage=-1;
+        }
+
+        if(regex != null) {
+            try {
+                this.regex = Pattern.compile(regex);
+            } catch (PatternSyntaxException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -72,5 +83,13 @@ public class TagProperties {
 
     public void setEndPage(int endPage) {
         this.endPage = endPage;
+    }
+
+    public Pattern getRegex() {
+        return regex;
+    }
+
+    public void setRegex(Pattern regex) {
+        this.regex = regex;
     }
 }
