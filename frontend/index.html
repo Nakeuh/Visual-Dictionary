@@ -21,22 +21,41 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Visual dictionary</a>
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button type="Go" class="btn btn-default">Go</button>
-                    </div>
-                </form>
+         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+                 <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Visual dictionary</a>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                    <form class="navbar-form navbar-right" role="search" id="form-numero">
+                        <div class="form-group">
+                            <input name="numero" type="number" min="0" max="674" class="form-control" placeholder="Numero de page" id="input-numero">
+                        </div>
+                    </form>
+                </div>
+        </nav>
+        
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                   <a id="fleche-gauche" class="fleche glyphicon glyphicon-chevron-left" href="#"></a>
+                    <div id="gauche"></div>
+                </div>
+                <div class="col-md-6">
+                    <a id="fleche-droite" class="fleche glyphicon glyphicon-chevron-right" href="#"></a>
+                    <div id="droite"></div>
+                </div>
             </div>
-    </nav>
+        </section>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/lodash.js"></script>
+        <script src="js/jquery.maphilight.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>  
-        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
