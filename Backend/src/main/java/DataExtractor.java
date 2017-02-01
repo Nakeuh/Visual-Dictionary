@@ -49,7 +49,7 @@ public class DataExtractor {
             List<TagCriterias> tagCriteria = getCriterias(nbPage,tagProperties,pdfStripper,pdDoc);
 
             // Extract page by page
-            for(int page=0; page<nbPage ;page++){
+            for(int page=0; page<nbPage;page++){
 
                 System.out.println("Extract tag text from page "+page);
 
@@ -60,7 +60,7 @@ public class DataExtractor {
                 // fill the charactersByArticle field of PDFTextStripper
                 pdfStripper.getText(pdDoc);
 
-                Map<String,List<Tag>> tagAssociatedText= pdfStripper.extractTags(tagCriteria);
+                Map<String,List<Tag>> tagAssociatedText= pdfStripper.extractTags(page,tagCriteria);
 
                 extractedTexts.put(page,tagAssociatedText);
             }
@@ -192,6 +192,7 @@ public class DataExtractor {
         object.put("nbPages",nbPage);
         object.put("pages",pageArray);
 
+      //  System.out.println(object.toString(2));
         try{
             PrintWriter writer = new PrintWriter(filename.split("\\.")[0]+".json", "UTF-8");
             writer.println(object.toString(4));

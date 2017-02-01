@@ -20,7 +20,7 @@ public class Main {
         posSample.add(new Tuple2<Integer, Point2D>(427,new Point2D.Float(100.005f,192.7897f)));
 
         Integer startPage=null;
-        Integer endPage = null;
+        Integer endPage = 617;
         tagProps.add(new TagProperties(nameTag, posSample,startPage,endPage));
 
         nameTag = "Paragraphs";
@@ -30,7 +30,7 @@ public class Main {
         startPage=null;
         endPage = null;
         tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage));
-
+/*
         nameTag = "Legends & Paragraphs";
         posSample = new ArrayList<Tuple2<Integer,Point2D>>();
         posSample.add(new Tuple2<Integer, Point2D>(300,new Point2D.Float(95.005f,330.7897f)));
@@ -39,7 +39,7 @@ public class Main {
         startPage=null;
         endPage = null;
         tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage));
-
+*/
         DataExtractor.process(tagProps,filename);
 
     }
