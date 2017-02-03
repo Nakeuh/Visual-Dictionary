@@ -1,6 +1,5 @@
 var page = 0;
-var dico;
-var ratioX = 1.424, ratioY = 1.404;
+var dico, ratioX, ratioY;
 
 $.get({url: "dictionary.json"}).then(function (data) {
     getPage(page);
@@ -86,6 +85,14 @@ function getPage() {
         img.setAttribute('height', document.height);
         emplacementDOM.appendChild(img);
         
+        var zoomX = (document.body.clientWidth/2) / 2304;
+        var zoomY = (document.body.clientHeight+1.4) / 2776;
+        ratioX = 4.16 * zoomX;
+        if (ratioY !== 4.12 * zoomY) {
+            console.log('ancien : ' + ratioY + ' nouveau : ' + 4.12 * zoomY);
+        }
+        ratioY = 4.12 * zoomY;
+        
         // Création du map
         var map = document.createElement("map");
         map.setAttribute('name', emplacement + 'map');
@@ -111,7 +118,7 @@ function getPage() {
                         tagDom.setAttribute('shape', 'rect');
                         tagDom.setAttribute(
                             'coords',
-                            String(_.round(tag.pos1.x)*ratioX) + ',' + String(_.round(tag.pos1.y)*ratioY) + ',' + String(_.round(tag.pos2.x)*ratioX) + ',' + String(_.round(tag.pos2.y)*ratioY)
+                            getPos(tag.pos1.x, 'x', 0) + ',' + getPos(tag.pos1.y, 'y', 0) + ',' + getPos(tag.pos2.x, 'x', 10) + ',' + getPos(tag.pos2.y, 'y', 10)
                         );
                         tagDom.setAttribute('href', 'https://www.google.fr');
                         tagDom.setAttribute('alt', 'legend');
@@ -122,11 +129,17 @@ function getPage() {
             }
         }
         
-        $('img[usemap]').maphilight({
+        /*$('img[usemap]').maphilight({
             alwaysOn: true
-        });
+        });*/
         
         emplacementDOM.appendChild(map);
+        
+        $('#' + emplacement + 'map area').click(function(e) {
+            e.preventDefault();
+            console.log(e);
+        });
+        
         
         // Affichage ou non des flèches
         if (emplacement === 'gauche') {
@@ -143,4 +156,8 @@ function getPage() {
             }
         }
     }); 
+}
+
+function getPos(pos, dir, suppl) {
+    return String(_.round(pos) * (dir === 'x' ? ratioX : (ratioY + (0.00004 * pos))) + suppl);
 }

@@ -290,12 +290,17 @@ a.fleche {
     font-size: 45px;
     position: fixed;
     top:50%;
-    color: black;
+    z-index: 99;
 }
 
 a.fleche:hover {
     opacity: 0.7;
     text-decoration: none;
+}
+
+.fleche i {
+    color: #00BC8C;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #fleche-droite {
