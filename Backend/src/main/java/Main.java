@@ -23,7 +23,7 @@ public class Main {
         Integer endPage = 617;
         String regex = null;
 
-      //  tagProps.add(new TagProperties(nameTag, posSample,startPage,endPage,regex));
+        tagProps.add(new TagProperties(nameTag, posSample,startPage,endPage,regex));
 
         nameTag = "Paragraphs";
         posSample = new ArrayList<Tuple2<Integer,Point2D>>();
@@ -32,7 +32,7 @@ public class Main {
         startPage=null;
         endPage = null;
         regex = null;
-      //  tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage,regex));
+        tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage,regex));
 
         nameTag = "Sommaire";
         posSample = new ArrayList<Tuple2<Integer,Point2D>>();
@@ -40,7 +40,7 @@ public class Main {
 
         startPage=null;
         endPage = null;
-        regex = null; // "(\\w(?>[\\w,\'’]+\\s?)*)[\\s.]{2,}(\\d+)[\\s]";  ===> Not working
+        regex =  "(\\w(?>[\\w,\'’]+\\s?)*)[\\s.]{2,}(\\d+)[\\s]?";
         tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage,regex));
 
         DataExtractor.process(tagProps,filename);

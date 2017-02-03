@@ -54,29 +54,39 @@ public class PDFTextStripperCustom extends PDFTextStripper {
 
                 float maxXInTag=0;
                 float minXInTag=0;
+                boolean matchedRegex = false;
 
                 ArrayList<Tag> tmpList = new ArrayList<Tag>();
 
                 for (List<TextPosition> l : list) {
                     for (TextPosition currentChar : l) {
+
+                        // First character of the page
                         if (previousChar == null) {
                             maxXInTag = minXInTag = currentChar.getX();
                             t.setDebut(new Point2D.Float(minXInTag, currentChar.getY()));
                         }
+
+                        // For each Font that describe the tag :
                         for (PDFont font : tagCrit.getFontCriteria()) {
                             if (isRightFont(font, currentChar)) {
                                 if(tagCrit.hasRegex()) {
                                     Matcher m = tagCrit.getRegex().matcher(t.getContent());
 
-                                    if(m.matches() && previousChar!=null){
+                                    if((matchedRegex && !m.matches()) && previousChar!=null){
                                         t.setDebut(new Point2D.Float(minXInTag,(float)t.getDebut().getY()));
                                         t.setFin(new Point2D.Float(maxXInTag, previousChar.getY() + previousChar.getHeight()));
+                                        char tmp  = t.getContent().charAt(t.getContent().length()-1);
+
+                                        t.setContent(t.getContent().substring(0,t.getContent().length()-1));
                                         tmpList.add(t);
                                         t = new Tag();
+                                        t.appendContent(tmp+"");
 
                                         maxXInTag = minXInTag = currentChar.getX();
                                         t.setDebut(new Point2D.Float(minXInTag, currentChar.getY()));
                                     }
+                                    matchedRegex = m.matches();
                                 }else if (!isInBlock(t.getDebut(), previousChar, currentChar)) {
                                     t.setDebut(new Point2D.Float(minXInTag,(float)t.getDebut().getY()));
                                     t.setFin(new Point2D.Float(maxXInTag, previousChar.getY() + previousChar.getHeight()));
@@ -87,7 +97,9 @@ public class PDFTextStripperCustom extends PDFTextStripper {
                                     t.setDebut(new Point2D.Float(minXInTag, currentChar.getY()));
 
                                 }
+
                                 t.appendContent(currentChar.getCharacter());
+
                                 if(currentChar.getX()<minXInTag){
                                     minXInTag = currentChar.getX();
                                 }else if(currentChar.getX()>maxXInTag){
