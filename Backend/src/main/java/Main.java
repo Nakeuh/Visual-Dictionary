@@ -11,6 +11,11 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args){
+        Tuple2<String,List<TagProperties>> inputs = getInputs();
+        DataExtractor.process(inputs._2,inputs._1);
+    }
+
+    public static Tuple2<String, List<TagProperties>> getInputs(){
         String filename = "resources/dictionary.pdf";
 
         List<TagProperties> tagProps = new ArrayList<TagProperties>();
@@ -27,7 +32,7 @@ public class Main {
 
         nameTag = "Paragraphs";
         posSample = new ArrayList<Tuple2<Integer,Point2D>>();
-        posSample.add(new Tuple2<Integer, Point2D>(9,new Point2D.Float(95.005f,330.7897f)));
+        posSample.add(new Tuple2<Integer, Point2D>(12,new Point2D.Float(150f,200f)));
 
         startPage=null;
         endPage = null;
@@ -43,7 +48,16 @@ public class Main {
         regex =  "(\\w(?>[\\w,\'’]+\\s?)*)[\\s.]{2,}(\\d+)[\\s]?";
         tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage,regex));
 
-        DataExtractor.process(tagProps,filename);
+        nameTag = "NumPage";
+        posSample = new ArrayList<Tuple2<Integer,Point2D>>();
+        posSample.add(new Tuple2<Integer, Point2D>(7,new Point2D.Float(527.6f,652.0f)));
 
+        startPage=null;
+        endPage = null;
+        regex = null;
+        tagProps.add(new TagProperties(nameTag,posSample,startPage,endPage,regex));
+
+
+        return new Tuple2<String, List<TagProperties>>(filename,tagProps);
     }
 }

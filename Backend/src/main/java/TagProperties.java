@@ -57,39 +57,19 @@ public class TagProperties {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public List<Tuple2<Integer,Point2D>> getPosSample() {
         return posSample;
-    }
-
-    public void setPosSample(List<Tuple2<Integer,Point2D>> posSample) {
-        this.posSample = posSample;
     }
 
     public int getStartPage() {
         return startPage;
     }
 
-    public void setStartPage(int startPage) {
-        this.startPage = startPage;
-    }
-
     public int getEndPage() {
         return endPage;
     }
 
-    public void setEndPage(int endPage) {
-        this.endPage = endPage;
-    }
-
     public Pattern getRegex() {
         return regex;
-    }
-
-    public void setRegex(Pattern regex) {
-        this.regex = regex;
     }
 }

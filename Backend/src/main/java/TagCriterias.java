@@ -1,4 +1,5 @@
 import org.apache.pdfbox.pdmodel.font.PDFont;
+import org.apache.pdfbox.util.TextPosition;
 
 import java.util.List;
 import java.util.regex.Pattern;
@@ -9,23 +10,10 @@ import java.util.regex.Pattern;
 public class TagCriterias {
 
     private String name;
-    private List<PDFont> fontCriteria;
+    private List<TextPosition> fontCriteria;
     private int startPage;
     private int endPage;
     private Pattern regex;
-
-    public TagCriterias(String name, List<PDFont> fontCriteria, Integer startPage, Integer endPage, Pattern regex){
-
-        this.name = name;
-
-        this.fontCriteria = fontCriteria;
-
-        this.startPage = startPage;
-
-        this.endPage = endPage;
-
-        this.regex = regex;
-    }
 
     public TagCriterias(){
 
@@ -39,11 +27,11 @@ public class TagCriterias {
         this.name = name;
     }
 
-    public List<PDFont> getFontCriteria() {
+    public List<TextPosition> getFontCriteria() {
         return fontCriteria;
     }
 
-    public void setFontCriteria(List<PDFont> fontCriteria) {
+    public void setFontCriteria(List<TextPosition> fontCriteria) {
         this.fontCriteria = fontCriteria;
     }
 

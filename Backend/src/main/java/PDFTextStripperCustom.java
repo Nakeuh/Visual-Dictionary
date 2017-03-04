@@ -20,7 +20,7 @@ public class PDFTextStripperCustom extends PDFTextStripper {
 
     }
 
-    public PDFont generateCriteria(Point2D pos){
+    public TextPosition generateCriteria(Point2D pos){
         List<List<TextPosition>> list = this.getCharactersByArticle();
 
         double distance = pos.distance(list.get(0).get(0).getX(), list.get(0).get(0).getY());
@@ -36,7 +36,7 @@ public class PDFTextStripperCustom extends PDFTextStripper {
             }
         }
 
-        return bestChar.getFont();
+        return bestChar;
     }
 
     public Map<String,List<Tag>> extractTags(int nPage,List<TagCriterias> tagCriterias){
@@ -61,6 +61,9 @@ public class PDFTextStripperCustom extends PDFTextStripper {
                 for (List<TextPosition> l : list) {
                     for (TextPosition currentChar : l) {
 
+                        //System.out.println("char : "+currentChar.getCharacter());
+                        //System.out.println("pos : "+currentChar.getX()+"/"+currentChar.getY()+"\n");
+
                         // First character of the page
                         if (previousChar == null) {
                             maxXInTag = minXInTag = currentChar.getX();
@@ -68,7 +71,7 @@ public class PDFTextStripperCustom extends PDFTextStripper {
                         }
 
                         // For each Font that describe the tag :
-                        for (PDFont font : tagCrit.getFontCriteria()) {
+                        for (TextPosition font : tagCrit.getFontCriteria()) {
                             if (isRightFont(font, currentChar)) {
                                 if(tagCrit.hasRegex()) {
                                     Matcher m = tagCrit.getRegex().matcher(t.getContent());
@@ -133,35 +136,29 @@ public class PDFTextStripperCustom extends PDFTextStripper {
         return tagAssociatedText;
     }
 
-    public boolean isRightFont(PDFont font, TextPosition character){
-        return font.equals(character.getFont());
+    public boolean isRightFont(TextPosition font, TextPosition character){
+        boolean correct =
+                font.getFont().equals(character.getFont())&&
+                font.getHeight()==character.getHeight();
+
+        return correct;
     }
 
-    // TODO
     public boolean isInBlock(Point2D startBlock,TextPosition previousChar, TextPosition currentChar){
         boolean inBlock = true;
         if(previousChar!=null) {
-          //  System.out.println("Char : "+currentChar.getCharacter());
-          //  System.out.println("Current Y : "+currentChar.getY());
-          //  System.out.println("Previous Y : "+previousChar.getY());
-
             if (currentChar.getY()<= previousChar.getY()+previousChar.getHeight()/2 && currentChar.getY()>= previousChar.getY()-previousChar.getHeight()/2) {          // Same line as previous character
                 inBlock = (currentChar.getX() <= previousChar.getX() + 3*previousChar.getWidth() &&
                                 currentChar.getX() > previousChar.getX());  // Return : ?(current is near to previous char)
             } else if (currentChar.getY() <= previousChar.getY() + 2*previousChar.getHeight() &&
                     currentChar.getY()>previousChar.getY()) { // Next line of previous character
-            //    System.out.println("Ligne 2 : ");
 
                 inBlock = currentChar.getX() < previousChar.getX() &&
-                        currentChar.getX() >= startBlock.getX() - (previousChar.getX() - currentChar.getX()) / 2;
+                        currentChar.getX() >= startBlock.getX() - (previousChar.getX() - currentChar.getX());
             } else {
-            //    System.out.println("Ligne X : ");
                 inBlock = false;
             }
         }
-
-       // System.out.println(inBlock);
         return inBlock;
-
     }
 }
